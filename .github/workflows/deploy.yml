@@ -74,7 +74,7 @@ jobs:
           rm -f circuitjs/site/_redirects
           
           # create circuits text files, redirect html files and _redirects
-          (cd circuitjs/site; wget -O - https://raw.githubusercontent.com/opcode-eu-org-website/opcode-main/refs/heads/master/booklets/extra-tex-files/booklets-sections/electronics/simulations.txt | ./resources/create_circuits.sh)
+          (cd circuitjs/site; wget -O - https://raw.githubusercontent.com/opcode-eu-org-website/opcode-main/refs/heads/master/booklets/extra-tex-files/booklets-sections/electronics/simulations.txt | ../../resources/create_circuits.sh)
           
           # use circuitjs.html index.html
           (cd circuitjs/site; rm -f index.html; ln -s circuitjs.html index.html)
