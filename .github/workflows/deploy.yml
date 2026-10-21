@@ -1,11 +1,12 @@
 # SPDX-FileCopyrightText: Robert Ryszard Paciorek <rrp@opcode.eu.org>
 # SPDX-License-Identifier: MIT
 
-name: Build and deploy to GitHub Pages
+name: Build and deploy to Pages
 
 on:
   push:
     branches: [ master, dev ]
+  workflow_dispatch: {}
 
 permissions:
   contents: read
